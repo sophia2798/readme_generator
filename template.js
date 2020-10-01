@@ -13,9 +13,9 @@ const generateREADME = response => {
     else if (response.license === "GNU GPL v3.0") {
         licenseDescription = "Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.";
         badge = "GPLv3.0-blue.svg"
-    }
+    };
 
-    if (response.vscode === "Yes") {
+    if (response.vscode[0] === "Yes") {
         vscodeBadge = "![VSCode](https://img.shields.io/badge/Made%20with-VSCode-0A0E77.svg)"
     }
     else {
@@ -68,7 +68,7 @@ To ensure a welcoming working environment, any contributor to this project must 
     - Showing kindness and empathy to one another
 
 ## Test Instructions
-${response.test}
+    ${response.test}
 
 ## Questions
 If you have any questions, please feel free to reach out via email at ${response.email}. Any further information can be found on my [GitHub Profile](https://github.com/${response.github}) or my [LinkedIn Profile](https://linkedin.com/in/${response.linkedin}).
