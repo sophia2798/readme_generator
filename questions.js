@@ -40,6 +40,12 @@ const questions = [{
     name:"repo"
 },
 {
+    type:"checkbox",
+    message:"Was VSCode used to create this project?",
+    choices:["Yes","No"],
+    name:"vscode"
+},
+{
     type:"input",
     message:"Enter your GitHub username",
     name:"github"
