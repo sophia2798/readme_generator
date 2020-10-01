@@ -36,6 +36,11 @@ const questions = [{
 },
 {
     type:"input",
+    message:"What is the name of the repository associated with this README?",
+    name:"repo"
+},
+{
+    type:"input",
     message:"Enter your GitHub username",
     name:"github"
 },
@@ -43,6 +48,11 @@ const questions = [{
     type:"input",
     message:"Enter your email address",
     name:"email"
+},
+{
+    type:"input",
+    message:"Enter your LinkedIn username",
+    name:"linkedin"
 }
 ];
 

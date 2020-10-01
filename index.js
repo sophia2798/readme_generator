@@ -7,7 +7,8 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 async function readme() {
     try {
-        const userResponse = await inquirer.prompt(questions)
+        const userResponse = await inquirer.prompt(questions);
+        console.log(userResponse)
     }
     catch (err) {
         console.log(err);
