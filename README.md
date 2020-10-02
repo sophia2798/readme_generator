@@ -2,11 +2,12 @@
 ![Github license](https://img.shields.io/badge/License-MIT-green.svg) ![VSCode](https://img.shields.io/badge/Made%20w-VSCode-0A0E77.svg)
 
 ## Description
-This project allows for a user to create a README.md by answering a given set of prompts from the command line. At the end, a .md file is created in the current directory, set with a working Table of Contents and appropriate links. 
+This project allows for a user to create a README by answering a given set of prompts from the command line. At the end, a markdown file is created in the current directory, set with a working Table of Contents and appropriate links. 
 
 ## Table Of Contents
 - [Access and Installation](#Access-and-Installation)
 - [Usage](#Usage)
+- [Features](#Features)
 - [License](#License)
 - [Contribution Guidelines](#Contribution-Guidelines)
 - [Test Instructions](#Test-Instructions)
@@ -25,9 +26,40 @@ To open and edit code files, you will need a text editor. The one used to create
 To install this repository, you can git clone the repository using the green "Code" button. You can copy and paste either the HTML or SSH URL.
 
 ## Usage
-This project can be used to create good README.md templates. It includes the necessary, minimum requirements for a comprehensive and complete README.md. Additional components and information may be added afterwards if needed. 
+This project can be used to create good README templates. It includes the necessary, minimum requirements for a comprehensive and complete README. Additional components and information may be added afterwards if needed. 
 
 Additionally, this project can be used to learn more about node.js, dependencies, npm installs, asynchronous functions, and inquirer and fs functions. 
+
+## Features
+This project includes...
+
+- A command line prompt asking the user for a unique name for their README so old files are not overwritten
+
+![alt-text](./assets/titlequestion.png "Title Question")
+
+- A set of command line prompt questions asking for informative content with which to populate the README file. 
+
+![alt-text](./assets/questionset1.png "First Set of Questions")
+
+- A command line list to choose from using the arrow keys and the Enter button. Here, the user can choose what kind of license they want. 
+
+![alt-text](./assets/list.png "List")
+
+- A command line prompt asking for the repository name so a link can be made in the README to the repository page.
+
+![alt-text](./assets/reponame.png "Repo Question")
+
+- A command line checkbox question to select using the arrow keys, the Space Bar to select, and Enter button to submit. This asks the user whether they used VS Code as a text editor to create or not create a related badge.
+
+![alt-text](./assets/checkboxquestion.png "Checkbox")
+
+- A final set of command line prompt questions for contact information. Additionally, a success message is displayed to the command line to alert the user they successfully created their README.
+
+![alt-text](./assets/finished.png "Final Questions")
+
+Following the completion of the README generation, the README can be read by inputting the following code into the command line. Further edits then be made prior to deployment.
+
+    code .
 
 ## License
 MIT
