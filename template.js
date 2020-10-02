@@ -15,8 +15,8 @@ const generateREADME = response => {
         badge = "GPLv3.0-blue.svg"
     };
 
-    if (response.vscode[0] === "Yes") {
-        vscodeBadge = "![VSCode](https://img.shields.io/badge/Made%20with-VSCode-0A0E77.svg)"
+    if ((response.vscode).length === 1 && response.vscode[0] === "Yes") {
+        vscodeBadge = "![VSCode](https://img.shields.io/badge/Made%20w-VSCode-0A0E77.svg)"
     }
     else {
         vscodeBadge = "";
@@ -72,7 +72,7 @@ To ensure a welcoming working environment, any contributor to this project must 
 
 ## Questions
 If you have any questions, please feel free to reach out via email at ${response.email}. Any further information can be found on my [GitHub Profile](https://github.com/${response.github}) or my [LinkedIn Profile](https://linkedin.com/in/${response.linkedin}).
-    `)
+`)
 }
 
 module.exports = generateREADME;
